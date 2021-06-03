@@ -8,6 +8,11 @@ import br.edu.infnet.prjatmoo.visao.TelaSaque;
 
 public class HomeCtrl {
 	
+	/**
+     * Classe controle com todas as operações e ações possiveis para realizar na conta, após o login
+     * 
+     */
+	
 	private Tela tela;
 	
 	public void abrir(int opcao) {

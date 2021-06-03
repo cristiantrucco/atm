@@ -3,8 +3,16 @@ package br.edu.infnet.prjatmoo.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.infnet.prjatmoo.utils.LoginOrSenhaInvalidaExcetion;
+
 public class Conta {
 	
+	/**
+	 * Classe que cria a conta 
+	 * @param numero conta do banco
+	 * @param saldo da conta
+	 */
+	 
 	private String numero;
 	
 	private int pin;

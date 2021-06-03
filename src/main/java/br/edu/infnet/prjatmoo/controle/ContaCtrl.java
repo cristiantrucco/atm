@@ -7,7 +7,10 @@ import br.edu.infnet.prjatmoo.modelo.Transacao;
 import br.edu.infnet.prjatmoo.utils.SaldoInsuficienteException;
 
 public class ContaCtrl {
-	
+	/**
+     * Classe controle com todas os métodos (ações possiveis da conta)
+     * 
+     */
 	private ContaService contaService = new ContaService();
 	
 	public double getSaldo() {
