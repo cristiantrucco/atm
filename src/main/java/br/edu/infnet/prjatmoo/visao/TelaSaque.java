@@ -13,7 +13,7 @@ public class TelaSaque implements Tela {
 	@Override
 	public void apresentar() {
 		System.out.println(" Saque ");
-		System.out.println(" Informe o valor: ");
+		System.out.println(" Informe o valor a ser sacado:  ");
 		Scanner scanner = new Scanner(System.in);
 		valorSaque = scanner.nextDouble();
 		System.out.println( contaCtrl.saca(valorSaque)  );

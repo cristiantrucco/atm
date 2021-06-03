@@ -69,7 +69,7 @@ public class ContaService {
 			return "saque realizado com sucesso";
 		}
 		
-		throw new SaldoInsuficienteException("Saldo insuficiente maluco");
+		throw new SaldoInsuficienteException("Saldo Insuficiente, para a conta: " + contaNumero);
 	}
 
 	public List<Transacao> getExtratoConta(String contaNumero) {

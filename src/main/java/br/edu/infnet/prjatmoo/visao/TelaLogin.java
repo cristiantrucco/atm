@@ -13,8 +13,8 @@ public class TelaLogin implements Tela {
 
 	public void apresentar()  {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Bem vindo");
-		System.out.print("Informa o numero da conta");
+		System.out.println("Bem vindo ao Banco ATM");
+		System.out.print("Informa o numero da conta: ");
 		conta = scan.next();
 		System.out.print("Informa o pin: ");
 		pin = scan.nextInt();
