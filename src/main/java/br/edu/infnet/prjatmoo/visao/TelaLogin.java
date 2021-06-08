@@ -11,7 +11,7 @@ public class TelaLogin implements Tela {
 	private int pin;
 	private LoginCtrl loginCtrl = new LoginCtrl();
 
-	public void apresentar()  {
+	public void apresentar() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Bem vindo ao Banco ATM");
 		System.out.print("Informa o numero da conta: ");

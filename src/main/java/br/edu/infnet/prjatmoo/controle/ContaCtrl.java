@@ -14,29 +14,22 @@ public class ContaCtrl {
 	private ContaService contaService = new ContaService();
 	
 	public double getSaldo() {
-		String contaNumero = LoginCtrl.conta.getNumero();
-		return contaService.getSaldoConta(contaNumero);
+		return contaService.getSaldoConta();
 	}
 
 	public void depositar(double valor) {
-		String contaNumero = LoginCtrl.conta.getNumero();
-		contaService.deposita(contaNumero, valor);
+		contaService.deposita(valor);
 	}
 
 	public String saca(double valorSaque) {
-		String contaNumero = LoginCtrl.conta.getNumero();
 		try {
-			return contaService.saca(valorSaque, contaNumero);
+			return contaService.saca(valorSaque);
 		} catch (SaldoInsuficienteException e) {
 			return e.getMessage();
 		}
 	}
 
 	public List<Transacao> getExtrato() {
-		String contaNumero = LoginCtrl.conta.getNumero();
-		return contaService.getExtratoConta(contaNumero);
+		return contaService.getExtratoConta();
 	}
-	
-	
-
 }
