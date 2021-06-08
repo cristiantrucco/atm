@@ -31,7 +31,4 @@ public class Transacao {
 	public String toString() {
 		return "Transacao [tipoTransacao=" + tipoTransacao + ", valor=" + valor + ", conta=" + conta + "]";
 	}
-	
-	
-
 }
