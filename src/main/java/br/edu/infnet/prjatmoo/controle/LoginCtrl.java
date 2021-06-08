@@ -6,8 +6,7 @@ import br.edu.infnet.prjatmoo.visao.TelaHome;
 
 public class LoginCtrl {
 
-	public static Conta conta;
-
+	public static Conta _conta = null;
 
 	/**
 	 * Classe que valida a conta e senha
@@ -18,7 +17,7 @@ public class LoginCtrl {
 	public void login(String conta, int pin) throws LoginOrSenhaInvalidaExcetion {
 
 		if (conta.equals("123") && pin == 456) {
-			this.conta = new Conta(conta, pin);
+			_conta = Conta.getInstancia(conta, pin);
 			TelaHome home = new TelaHome();
 			home.apresentar();
 			return;
