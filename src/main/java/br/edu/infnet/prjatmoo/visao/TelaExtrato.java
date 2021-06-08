@@ -1,7 +1,6 @@
 package br.edu.infnet.prjatmoo.visao;
 
 import java.util.List;
-
 import br.edu.infnet.prjatmoo.controle.ContaCtrl;
 import br.edu.infnet.prjatmoo.modelo.Transacao;
 
@@ -15,10 +14,7 @@ public class TelaExtrato implements Tela{
 		List<Transacao> transacoes = contaCtrl.getExtrato();
 
 		for (Transacao transacao : transacoes) {
-			System.out.println(transacao); 
+			System.out.println("tipoTransacao=" + transacao.getTipoTransacao() + ", valor=" + transacao.getValor()); 
 		}
-		
-		
 	}
-
 }
