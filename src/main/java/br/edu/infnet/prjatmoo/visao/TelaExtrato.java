@@ -15,7 +15,7 @@ public class TelaExtrato implements Tela{
 		List<Transacao> transacoes = contaCtrl.getExtrato();
 
 		for (Transacao transacao : transacoes) {
-			System.out.println(transacao); 
+			System.out.println("tipoTransacao=" + transacao.getTipoTransacao() + ", valor=" + transacao.getValor()); 
 		}
 		
 		
